@@ -14,7 +14,19 @@
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "sourceType": "module"
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "classes": true,
+      "jsx": true,
+      "templateStrings": true,
+      "spread": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true
+    }
   },
   "rules": {
     "no-console": "off",
